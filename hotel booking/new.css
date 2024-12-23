@@ -1,0 +1,380 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-color:white;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:black;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo h1 {
+  color: wheat;
+  font-style: oblique;
+  letter-spacing: 1px;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 2rem;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Burger Menu (for mobile) */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh;
+  background: url('room1.jpeg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  color: #ffF;
+  border-radius: 10px;
+}
+
+.home-section .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #ffcc00;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-section .btn:hover {
+  background-color: #e6b800;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 2rem;
+  min-height: 100vh;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: wheat;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-section .content {
+  flex: 1;
+}
+.about-section .content h2{
+  color:wheat;
+}
+
+
+.about-section .content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* Services Section */
+.services-section .services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-section .service {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-section .service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.services-section .service h3 {
+  margin: 1rem 0 0.5rem;
+  color: #004080;
+}
+
+.services-section .service p {
+  color: #555;
+}
+
+/* Gallery Section */
+.gallery-section .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.gallery-section .gallery-item {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-section .gallery-item:hover {
+  transform: scale(1.05);
+}
+/* contact Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+  color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: black;
+  margin: 10px;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color:black;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  background-color: black;
+  border-color:white;
+}
+/* booking Section */
+.booking-section .container {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.booking-section .content {
+  flex: 1;
+}
+
+.booking-section form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-section form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.booking-section form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.booking-section form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.booking-section form button:hover {
+  background-color: #003366;
+}
+
+#confirmation {
+  margin-top: 1rem;
+  background-color: #e7f5ff;
+  padding: 1rem;
+  border-left: 5px solid #004080;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav .nav-links {
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      top: 60px;
+      background-color: #004080;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+
+  nav .nav-links li {
+      margin: 2rem 0;
+  }
+
+  nav .nav-links a {
+      font-size: 1.5rem;
+  }
+
+  .nav-active {
+      transform: translateX(0);
+  }
+
+  .burger {
+      display: block;
+  }
+
+  .about-section .container,
+  .contact-section .container {
+      flex-direction: column;
+  }
+
+  .services-section .services-container,
+  .gallery-section .gallery-container {
+      justify-content: center;
+  }
+}
